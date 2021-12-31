@@ -5,6 +5,12 @@ import EmployeeListFilter from '../employee-list-filter/EmployeeListFilter';
 import EmployeeList from '../employee-list/EmployeeList';
 import EmployeeAddForm from '../employee-add-form/EmployeeAddForm';
 
+const data = [
+  { name: "Kate Jakson", salary: 50000, isPromoted: true },
+  { name: "Jake Smith", salary: 400000, isPromoted: false },
+  { name: "Clark Gibson", salary: 100000, isPromoted: true }
+];
+
 function App() {
   return (
     <div className="app">
@@ -12,7 +18,7 @@ function App() {
       <div className="employee-search-wrapper">
         <EmployeeSearch />
         <EmployeeListFilter />
-        <EmployeeList />
+        <EmployeeList data={data} />
       </div>
       <EmployeeAddForm />
     </div>
