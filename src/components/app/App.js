@@ -3,6 +3,7 @@ import Header from '../app-header/Header';
 import EmployeeSearch from '../employee-search/EmployeeSearch';
 import EmployeeListFilter from '../employee-list-filter/EmployeeListFilter';
 import EmployeeList from '../employee-list/EmployeeList';
+import EmployeeAddForm from '../employee-add-form/EmployeeAddForm';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <EmployeeListFilter />
         <EmployeeList />
       </div>
+      <EmployeeAddForm />
     </div>
   );
 }
