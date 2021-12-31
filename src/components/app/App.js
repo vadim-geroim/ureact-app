@@ -6,9 +6,9 @@ import EmployeeList from '../employee-list/EmployeeList';
 import EmployeeAddForm from '../employee-add-form/EmployeeAddForm';
 
 const data = [
-  { name: "Kate Jakson", salary: 50000, isPromoted: true },
-  { name: "Jake Smith", salary: 400000, isPromoted: false },
-  { name: "Clark Gibson", salary: 100000, isPromoted: true }
+  { id: 1, name: "Kate Jakson", salary: 50000, isPromoted: true },
+  { id: 2, name: "Jake Smith", salary: 400000, isPromoted: false },
+  { id: 3, name: "Clark Gibson", salary: 100000, isPromoted: true }
 ];
 
 function App() {

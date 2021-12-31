@@ -1,8 +1,11 @@
 import './EmployeeListItem.css';
 
 const EmployeeListItem = ({ name, salary, isPromoted }) => {
+    let classNames = "list-group-item d-flex justify-content-around align-items-center";
+    if (isPromoted) classNames += " promoted";
+
     return (
-        <li className={isPromoted ? "list-group-item d-flex justify-content-around align-items-center promoted" : "list-group-item d-flex justify-content-around align-items-center"}>
+        <li className={classNames}>
             <span>{name}</span>
             <span>{`$${salary}`}</span>
             <div className="btn-group gap-1">
